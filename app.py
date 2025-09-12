@@ -103,5 +103,6 @@ def predict():
 # This part is for running locally. In Colab, we'll run the app differently.
 if __name__ == '__main__':
     load_app_model()
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=9129)
+
 
